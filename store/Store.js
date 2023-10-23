@@ -13,7 +13,7 @@ class Store {
     const logData = {
       id: instance.id,
       info: "Created",
-      timeStamp: this.getTimestamp(),
+      timestamp: this.getTimestamp(),
     };
     this.sendEvent(logData);
   }
@@ -39,7 +39,7 @@ class Store {
     const logData = {
       id,
       info,
-      timeStamp: this.getTimestamp(),
+      timestamp: this.getTimestamp(),
     };
 
     this.sendEvent(logData);
@@ -52,7 +52,7 @@ class Store {
     const logData = {
       id,
       info: "Removed",
-      timeStamp: this.getTimestamp(),
+      timestamp: this.getTimestamp(),
     };
     this.sendEvent(logData);
   }
